@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_fresco_multi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.jaris.jaris_code.fresco.FrescoMultiActivity">
+
+    <include layout="@layout/titlebar" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_fresco_multi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        fresco:placeholderImage="@mipmap/ic_launcher"/>
+
+    <Button
+        android:id="@+id/bt_fresco_multiImg"
+        android:text="先显示低分辨率的图，然后是高分辨率的图"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_fresco_thubnailImg"
+        android:layout_marginTop="8dp"
+        android:text="本地缩略图预览"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_fresco_multiplexImg"
+        android:layout_marginTop="8dp"
+        android:text="本地图片复用"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_fresco_gif"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.jaris.jaris_code.fresco.FrescoGifActivity">
+
+    <include layout="@layout/titlebar" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_fresco_gif"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/bt_fresco_askImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请求GIF图片"/>
+
+    <Button
+        android:id="@+id/bt_fresco_stopAnim"
+        android:text="动画停止"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_fresco_startAnim"
+        android:text="动画开始"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

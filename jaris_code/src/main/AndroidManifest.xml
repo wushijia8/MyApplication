@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.jaris.jaris_code">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".JarisApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 屏蔽横竖屏声明周期重新执行 -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".okHttp.activity.OkHttpActivity" />
+        <activity android:name=".okHttp.activity.OkHttpListActivity" />
+        <activity android:name=".json.activity.NativeJsonPraseActivity" />
+        <activity android:name=".json.activity.GsonActivity" />
+        <activity android:name=".json.activity.FastJsonActivity" />
+        <activity android:name=".butterknife.ButterKnifeActivity" />
+        <activity android:name=".xutils3.XUtils3MainActivity" />
+        <activity android:name=".xutils3.annotation.FragmentXUtils3Activity" />
+        <activity android:name=".xutils3.net.XUtils3NetActivity" />
+        <activity android:name=".afinal.AfinalActivity" />
+        <activity android:name=".volley.VolleyActivity" />
+        <activity android:name=".eventbus.EventBusActivity" />
+        <activity android:name=".eventbus.EventBusSendActivity" />
+        <activity android:name=".imageloader.ImageLoaderActivity" />
+        <activity android:name=".imageloader.ImageloaderListviewActivity" />
+        <activity android:name=".imageloader.ImageLoaderGirdviewActivity" />
+        <activity android:name=".imageloader.ImageLoaderViewpagerActivity" />
+        <activity android:name=".picasso.activity.PicassoActivity" />
+        <activity android:name=".picasso.activity.PicassoListViewActivity" />
+        <activity android:name=".picasso.activity.PicassoTransfromationsActivity" />
+        <activity android:name=".glide.activity.GlideActivity" />
+        <activity android:name=".glide.activity.GlideRecyclerViewActivity" />
+        <activity android:name=".glide.activity.GlideBaseActivity" />
+        <activity android:name=".fresco.FrescoActivity" />
+        <activity android:name=".fresco.FrescoSpimgActivity" />
+        <activity android:name=".fresco.FrescoCropActivity" />
+        <activity android:name=".fresco.FrescoCircleAndCornerActivity" />
+        <activity android:name=".fresco.FrescoJpegActivity" />
+        <activity android:name=".fresco.FrescoGifActivity" />
+        <activity android:name=".fresco.FrescoMultiActivity" />
+        <activity android:name=".fresco.FrescoListenerActivity" />
+        <activity android:name=".fresco.FrescoResizeActivity" />
+        <activity android:name=".fresco.FrescoModifyActivity" />
+        <activity android:name=".fresco.FrescoAutoSizeActivity"></activity>
+    </application>
+
+</manifest>
