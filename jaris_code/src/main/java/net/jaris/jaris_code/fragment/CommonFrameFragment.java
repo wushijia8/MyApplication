@@ -22,6 +22,7 @@ import net.jaris.jaris_code.okHttp.activity.OkHttpActivity;
 import net.jaris.jaris_code.okHttp.adapter.CommonFrameFragmentAdapter;
 import net.jaris.jaris_code.okHttp.base.BaseFragment;
 import net.jaris.jaris_code.picasso.activity.PicassoActivity;
+import net.jaris.jaris_code.pulltorefresh.PullRefreshMainActivity;
 import net.jaris.jaris_code.volley.VolleyActivity;
 import net.jaris.jaris_code.xutils3.XUtils3MainActivity;
 
@@ -92,6 +93,9 @@ public class CommonFrameFragment extends BaseFragment {
                 }else if(data.toLowerCase().equals("fresco")){
                     Intent intent = new Intent(mContext, FrescoActivity.class);
                     startActivity(intent);
+                }else if(data.toLowerCase().equals("android-pulltorefresh")){
+                    Intent intent = new Intent(mContext, PullRefreshMainActivity.class);
+                    startActivity(intent);
                 }
                 Toast.makeText(mContext, data, Toast.LENGTH_SHORT).show();
             }
@@ -105,7 +109,7 @@ public class CommonFrameFragment extends BaseFragment {
         Log.e(TAG,"常用框架数据初始化....");
         //准备数据
         datas = new String[]{"OKHttp","NativeJsonPrase","Gson","FastJson","ButterKnife","xUtils3","Afinal","Volley"
-                ,"EventBus","ImageLoader","Picasso","RecyclerView","Glide","Fresco"};
+                ,"EventBus","ImageLoader","Picasso","RecyclerView","Glide","Fresco","Android-PullToRefresh"};
         //设置适配器
         mCommonFrameFragmentAdapter = new CommonFrameFragmentAdapter(mContext,datas);
         mListView.setAdapter(mCommonFrameFragmentAdapter);
