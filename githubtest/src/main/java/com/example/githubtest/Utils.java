@@ -5,4 +5,7 @@ package com.example.githubtest;
  */
 
 public class Utils {
+
+    public Utils() {
+    }
 }
