@@ -56,7 +56,14 @@
         <activity android:name=".fresco.FrescoListenerActivity" />
         <activity android:name=".fresco.FrescoResizeActivity" />
         <activity android:name=".fresco.FrescoModifyActivity" />
-        <activity android:name=".fresco.FrescoAutoSizeActivity"></activity>
+        <activity android:name=".fresco.FrescoAutoSizeActivity" />
+        <activity android:name=".pulltofresh.PullRefreshMainActivity" />
+        <activity android:name=".pulltofresh.PullToRefreshListActivity" />
+        <activity android:name=".pulltofresh.PullToRefreshGridActivity" />
+        <activity android:name=".pulltofresh.PullToRefreshListFragmentActivity" />
+        <activity android:name=".pulltofresh.PullToRefreshListInViewPagerActivity" />
+        <activity android:name=".pulltofresh.PullToRefreshViewPagerActivity" />
+        <activity android:name=".pulltofresh.PullToRefreshWebViewActivity" />
     </application>
 
 </manifest>
